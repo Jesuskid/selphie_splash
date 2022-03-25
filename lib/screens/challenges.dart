@@ -32,7 +32,7 @@ class ChallengesPage extends StatelessWidget {
                   SizedBox(height: 20,),
                   Center(child: Text('View, Join and Enjoy fun challenges in your country', textAlign: TextAlign.center, style: kOnboardTextSmall.copyWith(color: Colors.black87, fontSize: 18, wordSpacing: 0.5),)),
                   SizedBox(height: 10,),
-                  Icon(Icons.wine_bar_rounded, color: Colors.yellow, size: 50,),
+                  Image.asset('assets/challenge_trophy.png', scale: 0.9,),
                   SizedBox(height: 20,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,

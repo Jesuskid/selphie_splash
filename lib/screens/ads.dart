@@ -38,6 +38,7 @@ class _AdsPageState extends State<AdsPage> with SingleTickerProviderStateMixin {
           SizedBox(width: 15,),
           Icon(Icons.group_add_outlined, color: Colors.black54, size: 35, ),
         ],
+        leading: IconButton(onPressed: (){Navigator.pop(context);},  icon: Icon(Icons.arrow_back, color: Colors.black87,)),
         toolbarHeight: 70,
       ),
       body: SafeArea(

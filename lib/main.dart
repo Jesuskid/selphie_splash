@@ -1,6 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:selphie_splash/screens/challenges.dart';
+import 'package:selphie_splash/screens/discover_poeple.dart';
+import 'package:selphie_splash/screens/profile_page.dart';
 import 'screens/on_boarding.dart';
 import 'screens/login.dart';
 import 'screens/sign_up.dart';
@@ -15,8 +17,9 @@ import 'screens/retrive_password.dart';
 import 'screens/home_page.dart';
 import 'screens/ads.dart';
 import 'screens/selfie_of_week.dart';
-import 'screens/retrive_password.dart';
+import 'screens/home.dart';
 import 'auth_service.dart';
+import 'screens/inbox.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -40,6 +43,9 @@ class MyApp extends StatelessWidget {
             'home': (context) => HomePage(),
             'login': (context) => LoginPage(),
             'signUp': (context) => SignUp(),
+            'profile_page': (context) => ProfilePage(),
+            'ads_page': (context) => AdsPage(),
+            'inbox': (context) => Inbox(),
             'retrieve': (context) => RetrievePasswordPage()
           },
           home: AuthenticationWrapper()
@@ -60,7 +66,7 @@ class AuthenticationWrapper extends StatelessWidget {
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            return HomePage();
+            return Home();
           } else {
             return LoginPage();
           }

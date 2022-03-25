@@ -15,6 +15,7 @@ class ProfilePage extends StatelessWidget {
           style: kOnboardTextBig.copyWith(
               color: Colors.blue, fontSize: 25, fontWeight: FontWeight.w600),
         ),
+        leading: IconButton(onPressed: (){Navigator.pop(context);}, icon: Icon(Icons.arrow_back, color: Colors.black87,),),
         actions: [
           Icon(
             Icons.menu,

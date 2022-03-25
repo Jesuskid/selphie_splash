@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:selphie_splash/constants.dart';
@@ -13,9 +14,9 @@ class SelfiePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0.2,
-        title: Text('SelphieSplash', style: kOnboardTextBig.copyWith(color: Colors.blue, fontSize: 25, fontWeight: FontWeight.w600),),
+        title: Text('SelfieSplash', style: kOnboardTextBig.copyWith(color: Colors.blue, fontSize: 25, fontWeight: FontWeight.w600),),
         actions: [
-          Icon(Icons.warning, color: Colors.black54, size: 35, )
+          Icon(CupertinoIcons.info, color: Colors.black54, size: 35, )
         ],
         toolbarHeight: 70,
       ),
@@ -26,8 +27,9 @@ class SelfiePage extends StatelessWidget {
               child: Column(
                 children: [
                   TextButton(onPressed: (){
-                    FirebaseAuth.instance.signOut();
-                  }, child: Text('Log Out')),
+                   showDialog(context: context, builder: ModalWinner);
+
+                  }, child: Text('Lauch alert')),
                   SizedBox(height: 20,),
                   Container(
                     padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
@@ -78,6 +80,29 @@ class SelfiePage extends StatelessWidget {
     );
   }
 }
+
+
+
+  Widget ModalWinner(BuildContext context) =>AlertDialog(
+    contentPadding: EdgeInsets.all(10),
+    backgroundColor: Colors.transparent,
+    content: Container(
+      padding: EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        color: Colors.white
+      ),
+      height:260,
+      child: Column(
+        children: [
+          Image.asset('assets/award.png', scale: 4,),
+          SizedBox(height: 10,),
+          Text('Get the most admirations on your selfies every week to win', textAlign: TextAlign.center, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),)
+        ],
+      ),
+    ),
+    actionsAlignment: MainAxisAlignment.center,
+  );
 
 class Selfie extends StatelessWidget {
   const Selfie({
