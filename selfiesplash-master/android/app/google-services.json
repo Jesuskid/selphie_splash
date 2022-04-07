@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "692718192946",
+    "firebase_url": "https://test-2d8f0.firebaseio.com",
+    "project_id": "test-2d8f0",
+    "storage_bucket": "test-2d8f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692718192946:android:26fe050e5b23f7e6d82f2b",
+        "android_client_info": {
+          "package_name": "com.example.pushnotifications_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692718192946-7srar6uubhm6ksfn62c9sc2rikvd2qqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2fYGCjXz9LpbT2jFf8GGpn2SzT1zntD8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692718192946-7srar6uubhm6ksfn62c9sc2rikvd2qqv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692718192946:android:37f063360e6a1f46d82f2b",
+        "android_client_info": {
+          "package_name": "com.rawllings.plant_ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692718192946-7srar6uubhm6ksfn62c9sc2rikvd2qqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2fYGCjXz9LpbT2jFf8GGpn2SzT1zntD8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692718192946-7srar6uubhm6ksfn62c9sc2rikvd2qqv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692718192946:android:8fcbc0e07119fc75d82f2b",
+        "android_client_info": {
+          "package_name": "com.selfiesplash.selphie_splash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692718192946-7srar6uubhm6ksfn62c9sc2rikvd2qqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2fYGCjXz9LpbT2jFf8GGpn2SzT1zntD8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692718192946-7srar6uubhm6ksfn62c9sc2rikvd2qqv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
